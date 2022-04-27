@@ -1,0 +1,14 @@
+# Metals
+.metals/
+.bloop/
+.ammonite/
+metals.sbt
+
+# sbt
+target/
+
+# VSCode
+.vscode/
+
+# more
+_*
