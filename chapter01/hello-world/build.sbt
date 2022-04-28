@@ -30,6 +30,9 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-sql" % sparkVersion,
 )
 
+// @ref: https://github.com/sbt/sbt/issues/3608#issuecomment-338333593
+run / fork := true
+
 // Here, `libraryDependencies` is a set of dependencies, and by using `+=`,
 // we're adding the scala-parser-combinators dependency to the set of dependencies
 // that sbt will go and fetch when it starts up.

@@ -1,6 +1,7 @@
 # Metals
 .metals/
 .bloop/
+.bsp/
 .ammonite/
 metals.sbt
 
