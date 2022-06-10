@@ -5,7 +5,6 @@ import java.nio.file.attribute.FileTime
 import java.sql.Timestamp
 import java.util.Date
 import org.slf4j.LoggerFactory
-import x.utils.SparkColumn
 import scala.beans.BeanProperty
 import scala.annotation.meta.getter
 import scala.annotation.meta.beanGetter
@@ -18,16 +17,13 @@ import scala.annotation.meta.field
   *   rambabu.posa
   */
 case class PhotoMetadata(
-    @(SparkColumn @field)(name = "Date")
     dateTaken: Timestamp = new Timestamp(System.currentTimeMillis()),
     directory: String,
     extension: String,
     fileCreationDate: Timestamp,
     fileLastAccessDate: Timestamp,
     fileLastModifiedDate: Timestamp,
-    @(SparkColumn @field)(nullable = false)
     filename: String,
-    @(SparkColumn @field)(`type` = "float")
     geoX: Float = 0.0f,
     geoY: Float = 0.0f,
     geoZ: Float = 0.0f,

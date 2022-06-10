@@ -20,7 +20,6 @@ import org.apache.spark.sql.connector.read.PartitionReader
 import org.apache.spark.sql.catalyst.InternalRow
 import org.apache.spark.unsafe.types.UTF8String
 
-import x.utils.SparkBeanUtils
 import x.extlib.PhotoMetadata
 import x.extlib.RecursiveExtensionFilteredLister
 import config.Constants
