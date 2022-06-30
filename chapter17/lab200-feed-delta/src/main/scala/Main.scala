@@ -11,7 +11,7 @@ object Main extends App {
     .builder()
     .appName("Ingestion the 'Grand Débat' files to Delta Lake")
     // To use Databricks Delta Lake, we should add delta core packages to SparkSession
-    .config("spark.jars.packages", "io.delta:delta-core_2.12:0.7.0")
+    .config("spark.jars.packages", "io.delta:delta-core_2.13:1.2.1")
     .master("local[*]")
     .getOrCreate()
 
